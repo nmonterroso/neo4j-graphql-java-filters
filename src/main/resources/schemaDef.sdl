@@ -1,0 +1,9 @@
+type Person {
+	name: String!
+	friends: [Person!]! @relation(name:"knows",direction:OUT)
+	pets: [Pet!] @relation(name:"knows",direction:OUT)
+}
+
+type Pet {
+	name: String!
+}

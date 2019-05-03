@@ -1,0 +1,11 @@
+{
+  person (filter: { friends_not: null }) {
+    name
+    friends {
+      name
+    }
+    pets {
+      name
+    }
+  }
+}
