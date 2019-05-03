@@ -10,11 +10,10 @@ import java.nio.file.Files;
 
 public class Main {
 
-  private final String schemaDef;
   private final GraphQLSchema schema;
 
   private Main() throws IOException {
-    schemaDef = read("schemaDef.sdl");
+    String schemaDef = read("schemaDef.sdl");
     schema = SchemaBuilder.buildSchema(schemaDef, new Translator.Context());
   }
 
