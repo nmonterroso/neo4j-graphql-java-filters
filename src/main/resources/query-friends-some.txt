@@ -1,0 +1,11 @@
+{
+  person (filter: { friends_some: {} }) {
+    name
+    friends {
+      name
+    }
+    pets {
+      name
+    }
+  }
+}

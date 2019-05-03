@@ -21,6 +21,7 @@ public class Main {
     printQuery("query-friends-not-null.txt");
     printQuery("query-friends-name-notnull.txt");
     printQuery("query-empty-object.txt");
+    printQuery("query-friends-some.txt");
   }
 
   private void printQuery(String resource) {
