@@ -27,7 +27,7 @@ public class Main {
   private void printQuery(String resource) {
     try {
       Translator.Cypher translation = new Translator(schema).translate(read(resource)).get(0);
-      System.out.println(String.format("%s:\n%s", resource, translation.getQuery()));
+      System.out.println(String.format("%s:\n\tQUERY: %s\n\tPARAMS: %s", resource, translation.getQuery(), translation.getParams()));
     } catch (Exception e) {
       System.out.println(String.format("ERROR: %s - %s", resource, e.getMessage()));
     }
